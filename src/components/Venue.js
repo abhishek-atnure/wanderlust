@@ -10,7 +10,7 @@ export default function Venue({ venues }) {
                 {venues.length > 0 && venues.map((venue) => (
                     <div className="venue" id="venue1">
                         <h2>{venue.name}</h2>
-                        <img className="venueimage" src={venue.categories[0].icon.prefix + "bg_64" + venue.categories[0].icon.suffix} />
+                        <img className="venueimage" src={venue.categories[0].icon.prefix + "bg_64" + venue.categories[0].icon.suffix} alt={venue.name} />
                         <h3>{venue.location.address}</h3>
                         <p>{venue.location.city}</p>
                         <p>{venue.location.country}</p>

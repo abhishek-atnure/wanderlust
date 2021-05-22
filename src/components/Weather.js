@@ -16,7 +16,7 @@ export default function Weather({ weather }) {
                     <h2>{weekDays[(new Date()).getDay()]}</h2>
                     <h2>Temperature: {weather.main.temp ? kelvinToFahrenheit(weather.main.temp) : "Not avilable"}&deg;F</h2>
                     <h2>Condition: {weather.weather[0].description}</h2>
-                    <img src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt="" />
+                    <img src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt="weather" />
                 </div>
                     : null}
             </section>
